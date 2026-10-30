@@ -1,0 +1,9 @@
+project: savantenvs/vowpal_wabbit
+target: fuzz_model_load
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar   # accumulation (REQUIRED)
+  - file://mayhem/fuzz_model_load/testsuite                                          # per-target starter seeds
+cmds:
+  - cmd: /mayhem/fuzz_model_load
+    libfuzzer: true
+    timeout: 30

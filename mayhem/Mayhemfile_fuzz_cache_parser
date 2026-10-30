@@ -1,0 +1,9 @@
+project: savantenvs/vowpal_wabbit
+target: fuzz_cache_parser
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar   # accumulation (REQUIRED)
+  - file://mayhem/fuzz_cache_parser/testsuite                                          # per-target starter seeds
+cmds:
+  - cmd: /mayhem/fuzz_cache_parser
+    libfuzzer: true
+    timeout: 30

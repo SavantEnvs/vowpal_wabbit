@@ -1,0 +1,1 @@
+{"Version":"1","EventId":"abc","c":{"GUser":{"a":1},"_multi":[{"x":1},{"y":1}],"_slots":[{"_id":"1"}]},"_outcomes":[{"_label_cost":-1,"_a":[0],"_p":[1.0]}]}
